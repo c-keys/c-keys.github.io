@@ -3,10 +3,10 @@ title: cKeys
 description: |
   Keyboards and Workshops
 owner: cKeys
-first_published: 2017 # if migrating another site, the year of your first publish
+first_published: 2017
 email: branden@brandenbyers.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.ckeys.org" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://ckeys.org"
 social:
   #twitter: https://twitter.com/<username>
   #github: https://github.com/<username>
