@@ -1,0 +1,21 @@
+<!-- Footer -->
+<footer id="footer">
+  <!-- <ul class="icons"> -->
+  <!--   {% for socloc in site.social %} -->
+  <!--   {% if socloc[1] %} -->
+  <!--   {% if socloc[0] == 'email' %} -->
+  <!--   <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa&#45;envelope&#45;o" -->
+  <!--          ><span class="label">E&#45;mail</span></a></li> -->
+  <!--   {% else %} -->
+  <!--   <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa&#45;{{ socloc[0] }}" -->
+  <!--          ><span class="label">{{ socloc[0] }}</span></a></li> -->
+  <!--   {% endif %} -->
+  <!--   {% endif %} -->
+  <!--   {% endfor %} -->
+  <!-- </ul> -->
+  <ul class="copyright">
+    <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+    {{ thisyear }}
+    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+  </ul>
+</footer>
