@@ -1,0 +1,45 @@
+---
+layout: page
+title: Contact
+---
+
+<section>
+  <h4>We want to hear from you.</h4>
+  <form method="POST" action="http://formspree.io/info@ckeys.org">
+    <input type="hidden" name="_next" value="/contact/thanks/index.html" />
+    <input type="hidden" name="_subject" value="cKeys Submission" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="row uniform">
+      <div class="6u 12u$(xsmall)">
+        <input type="text" name="name" id="name" value="" placeholder="Name" />
+      </div>
+      <div class="6u$ 12u$(xsmall)">
+        <input type="email" name="email" id="email" value="" placeholder="Email" />
+      </div>
+      <div class="6u 12u$(small)">
+        <input type="checkbox" id="volunteer" name="volunteer">
+        <label for="volunteer">I want to volunteer!</label>
+      </div>
+      <div class="6u 12u$(small)">
+        <input type="checkbox" id="human" name="human" checked>
+        <label for="human">I am a robot.</label>
+      </div>
+      <div class="12u$">
+        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+      </div>
+      <div class="12u$">
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="special" /></li>
+          <li><input type="reset" value="Reset" /></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</section>
+<section>
+  <div class="box alt">
+    <div class="row uniform 50%">
+      <div class="12u"><span class="image fit"><img src="/images/deep-dish.jpg" alt="" /></span></div>
+    </div>
+  </div>
+</section>
