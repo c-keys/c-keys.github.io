@@ -5,10 +5,7 @@ title: Contact
 
 <section>
   <h4>We want to hear from you.</h4>
-  <form method="POST" action="https://formspree.io/info@ckeys.org">
-    <input type="hidden" name="_next" value="/contact" />
-    <input type="hidden" name="_subject" value="cKeys Submission" />
-    <input type="text" name="_gotcha" style="display:none" />
+  <form name="contact-page" action="/contact/" class="form-stacked" netlify-honeypot="bot-field" netlify>
     <div class="row uniform">
       <div class="6u 12u$(xsmall)">
         <input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -21,6 +18,7 @@ title: Contact
         <label for="volunteer">I want to volunteer!</label>
       </div>
       <div class="6u 12u$(small)">
+        <input name="bot-field" style="display:none">
         <input type="checkbox" id="human" name="human" checked>
         <label for="human">I am a robot.</label>
       </div>
