@@ -1,0 +1,256 @@
+---
+layout: page
+title: naKey Numpad Build Guide
+subtitle: A keyboard with all through-hole components except the chip!
+---
+<h2>naKey what?</h2>
+
+<p>Pronounced nah-key. This keyboard is best enjoyed raw without a case. Designed for its PCB aesthetic and its ability to more easily introduce the components on a printed circuit board. The only surface mounted part is the Atmega32u4 (if you take one of our workshops, this chip will come pre-soldered). All other components are through-hole. We chose to do this for aesthetics (through-hole so pretty), beginner-friendly soldering, and easier component identification.</p>
+
+<hr />
+
+<h2>Bill of Materials</h2>
+
+<ul>
+  <li>naKey PCB</li>
+  <li>Atmega32u4 (pre-soldered if from cKeys)</li>
+  <li>Mini USB port</li>
+  <li>16 MHz Crystal</li>
+  <li>Reset Switch</li>
+  <li>Diodes x 17</li>
+  <li>22 Ohm Resistors x 2</li>
+  <li>10k Ohm Resistors x 2</li>
+  <li>1 uf Capacitors x 2</li>
+  <li>27uF Crystal Capacitors x 2</li>
+  <li>0.1uF Decoupling Capacitors x 4</li>
+  <li>2u Stabilizers x 3</li>
+  <li>Rubber Bumpons x 4</li>
+</ul>
+
+<p>Kit-less and sourcing parts yourself? Here is an <a href="https://octopart.com/bom-tool/gnhrKJXq">Octopart BOM</a> for your convenience.</p>
+
+<hr />
+
+<h2>Step 1: Get to know your PCB</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-pcb-back.jpg" alt="Back of PCB" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-pcb-front.jpg" alt="Front of PCB" /></span></div>
+    <div class="6u"><span class="image fit">Back/Bottom</span></div>
+    <div class="6u"><span class="image fit">Front/Top</span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 2: Solder crystal</h2>
+
+<p>This is the heartbeat of your keyboard in as much as your heartbeat sets your body's BPM. But the analogy falls apart quickly. The crystal produces a precise 16mhz frequency which provides a stable clock signal for the Atmega32u4. Think of the quartz in vintage watches that maintain accurate time. This crystal keeps time for your keyboard.</p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-crystal-before.jpg" alt="Crystal beside PCB" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-crystal-after.jpg" alt="Crystal on PCB" /></span></div>
+  </div>
+</div>
+
+<p>Place the crystal's pins through the top of the PCB. Your crystal does not have specific polarity; stick either pin in either hole. Then flip the PCB over while holding the crystal in place.</p>
+
+<p>In the image below, the pins are bent outward to hold the crystal in place once flipped over. Alternatively, if you prefer not to bend your pins, you can use masking or painter's tape to hold the crystal in place.</p>
+
+<p>Solder the crystal's pins to the PCB and then clip the excess length of the pins.</p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-crystal-prep-2.jpg" alt="Preparing cyrstal for soldering" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-crystal-soldered.jpg" alt="Crystal soldered on PCB" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 3: Solder 27uF crystal capacitors</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-1-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-1-prep.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>These are your <a href="http://ww1.microchip.com/downloads/en/appnotes/00826a.pdf">crystal load capacitors</a>.</p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-1-soldered.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-1-soldered-2.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>The image on the left shows an example of a blob of solder. Blob bad! In order to fix this, the solder was reheated by the soldering iron and re-flowed. The right image shows the result.</p>
+
+<hr />
+
+<h2>Step 4: Solder 0.1uF capacitors</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-2-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-2-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-2-prep.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-2-soldered.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 5: Solder 1uf capacitors</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-3-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-3-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-3-prep.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-3-soldered.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 6: Solder 22 ohm resistors</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>Unlike the diodes that you will solder in step 9, resistors are not directional. The wires can be inserted in either direction.</p>
+
+<p>The way to identify a resistor is by the color code; those little strips of color mean something. When first learning to read resistor color codes, you might find it difficult to differentiate certain colors. And different manufacturer's colors will not always match. The color code for your 22 ohm resistors is <em>red-red-black-gold</em>.</p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-prep.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-soldered.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 7: Solder 10k ohm resistors</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-2-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-2-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>Resistor color code: <em>brown-black-orange-gold</em></p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-2-prep.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-resistors-2-soldered.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 8: Solder reset switch</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-reset-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-reset-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 9: Solder diodes</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-diodes-before.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-diodes-after.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p><strong>Important:</strong> <em>Diodes are directional. If you solder them in the incorrect direction, your keyboard will not work as expected.</em></p>
+
+<p>Pre-bend all of your diodes so that the ends of the wires fit smoothly into the PCB holes.</p>
+
+<p>Locate the black line on a diode. The wire coming from this end goes into the circle-marked hole of the PCB. The wire on the other end goes through the square-marked hole. Make certain the glass section of the diode sits flush against the PCB. Solder both ends.</p>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-diodes-prep.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-diodes-prep-2.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Step 10: Connect stabilizers</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-stabilizers-after.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-stabilizers-after-3.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>Your stabilizers will either snap or screw into place.</p>
+
+<hr />
+
+<h2>Step 11: Solder switches</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-switches-after.jpg" alt="" /></span></div>
+    <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-switches-after-side.jpg" alt="" /></span></div>
+  </div>
+</div>
+
+<p>Place your switches on your keyboard with the slit facing down. That slit is for LEDs, but the naKey does not support LEDs.</p>
+
+<p><strong>Note:</strong> If you are not building with a cKeys kit, you will need to make sure you get PCB mount (5 pin) switches. Kailh switches will not work. The reason for PCB mount is so that the switches sit straight on the PCB despite lacking a top plate.</p>
+
+<hr />
+
+<h2>Step 12: Add rubber bumpons</h2>
+
+<p>Our images of sticking on rubber feet have gone missing. Use your imagination as you invision four rubber bumpon feet being placed, one each, in all four corners on the bottom of the PCB. When the PCB is facing backwards, you may need to experiment with the best placement for the top left bumpon. Components may be in your way depending on the size of your rubber bumpon feet.</p>
+
+<hr />
+
+<h2>Completion</h2>
+
+<div class="box alt">
+  <div class="row uniform 50%">
+    <div class="12u"><span class="image fit"><img src="/images/nakey/nakey-final-build.jpg" alt="" /></span></div>
+  </div>
+</div>
+<hr />
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'c-keys/4x4'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
