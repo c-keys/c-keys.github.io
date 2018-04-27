@@ -23,6 +23,7 @@ subtitle: A keyboard with all through-hole components except the chip!
   <li>1 uf Capacitors x 2</li>
   <li>27uF Crystal Capacitors x 2</li>
   <li>0.1uF Decoupling Capacitors x 4</li>
+  <li>2u Stabilizers x 3</li>
   <li>Rubber Bumpons x 4</li>
 </ul>
 
@@ -36,6 +37,8 @@ subtitle: A keyboard with all through-hole components except the chip!
   <div class="row uniform 50%">
     <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-pcb-back.jpg" alt="Back of PCB" /></span></div>
     <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-pcb-front.jpg" alt="Front of PCB" /></span></div>
+    <div class="6u"><span class="image fit">Back/Bottom</span></div>
+    <div class="6u"><span class="image fit">Front/Top</span></div>
   </div>
 </div>
 
@@ -43,7 +46,7 @@ subtitle: A keyboard with all through-hole components except the chip!
 
 <h2>Step 2: Solder crystal</h2>
 
-<p>This is the heartbeat of your keyboard in as much as your heartbeat sets your body's BPM. But the analogy falls apart very quickly. The crystal produces a precise frequency to provide a stable clock signal for the Atmega32u4. Think of the quartz in vintage watches that maintains accurate time. This crystal keeps time for your keyboard.</p>
+<p>This is the heartbeat of your keyboard in as much as your heartbeat sets your body's BPM. But the analogy falls apart quickly. The crystal produces a precise 16mhz frequency which provides a stable clock signal for the Atmega32u4. Think of the quartz in vintage watches that maintain accurate time. This crystal keeps time for your keyboard.</p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -67,7 +70,7 @@ subtitle: A keyboard with all through-hole components except the chip!
 
 <hr />
 
-<h2>Step 3: Solder ??? capacitors</h2>
+<h2>Step 3: Solder 27uF crystal capacitors</h2>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -76,7 +79,7 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p>These are your <a href="http://ww1.microchip.com/downloads/en/appnotes/00826a.pdf">crystal load capacitors</a>.</p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -84,6 +87,8 @@ subtitle: A keyboard with all through-hole components except the chip!
     <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-1-soldered-2.jpg" alt="" /></span></div>
   </div>
 </div>
+
+<p>The image on the left shows an example of a blob of solder. Blob bad! In order to fix this, the solder was reheated by the soldering iron and re-flowed. The right image shows the result.</p>
 
 <hr />
 
@@ -96,8 +101,6 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
-
 <div class="box alt">
   <div class="row uniform 50%">
     <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-2-prep.jpg" alt="" /></span></div>
@@ -107,7 +110,7 @@ subtitle: A keyboard with all through-hole components except the chip!
 
 <hr />
 
-<h2>Step 5: Solder ??? capacitors</h2>
+<h2>Step 5: Solder 1uf capacitors</h2>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -115,8 +118,6 @@ subtitle: A keyboard with all through-hole components except the chip!
     <div class="6u"><span class="image fit"><img src="/images/nakey/small/nakey-caps-3-after.jpg" alt="" /></span></div>
   </div>
 </div>
-
-<p>Insert instructions here</p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -127,7 +128,7 @@ subtitle: A keyboard with all through-hole components except the chip!
 
 <hr />
 
-<h2>Step 6: Solder ??? resistors</h2>
+<h2>Step 6: Solder 22 ohm resistors</h2>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -136,7 +137,9 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p>Unlike the diodes that you will solder in step 9, resistors are not directional. The wires can be inserted in either direction.</p>
+
+<p>The way to identify a resistor is by the color code; those little strips of color mean something. When first learning to read resistor color codes, you might find it difficult to differentiate certain colors. And different manufacturer's colors will not always match. The color code for your 22 ohm resistors is <em>red-red-black-gold</em>.</p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -147,7 +150,7 @@ subtitle: A keyboard with all through-hole components except the chip!
 
 <hr />
 
-<h2>Step 7: Solder ??? resistors</h2>
+<h2>Step 7: Solder 10k ohm resistors</h2>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -156,7 +159,7 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p>Resistor color code: <em>brown-black-orange-gold</em></p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -176,8 +179,6 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
-
 <hr />
 
 <h2>Step 9: Solder diodes</h2>
@@ -189,7 +190,11 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p><strong>Important:</strong> <em>Diodes are directional. If you solder them in the incorrect direction, your keyboard will not work as expected.</em></p>
+
+<p>Pre-bend all of your diodes so that the ends of the wires fit smoothly into the PCB holes.</p>
+
+<p>Locate the black line on a diode. The wire coming from this end goes into the circle-marked hole of the PCB. The wire on the other end goes through the square-marked hole. Make certain the glass section of the diode sits flush against the PCB. Solder both ends.</p>
 
 <div class="box alt">
   <div class="row uniform 50%">
@@ -209,7 +214,7 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p>Your stabilizers will either snap or screw into place.</p>
 
 <hr />
 
@@ -222,7 +227,9 @@ subtitle: A keyboard with all through-hole components except the chip!
   </div>
 </div>
 
-<p>Insert instructions here</p>
+<p>Place your switches on your keyboard with the slit facing down. That slit is for LEDs, but the naKey does not support LEDs.</p>
+
+<p><strong>Note:</strong> If you are not building with a cKeys kit, you will need to make sure you get PCB mount (5 pin) switches. Kailh switches will not work. The reason for PCB mount is so that the switches sit straight on the PCB despite lacking a top plate.</p>
 
 <hr />
 
