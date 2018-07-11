@@ -41,3 +41,12 @@ title: Contact
     </div>
   </div>
 </section>
+
+<script>
+window.onload = function() {
+ const myInput = document.getElementById('message');
+ myInput.onpaste = function(e) {
+   e.preventDefault();
+ }
+}
+</script>
