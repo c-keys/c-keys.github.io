@@ -1,0 +1,60 @@
+---
+layout: page
+title: Volunteering
+---
+
+<section>
+  <p>We here at ckeys are a 100% volunteer based organization, so to do all that we want to do we need help from people like you! Several things you might do as a volunteer would include:</p>
+
+  <ul>
+    <li>Helping with the meetup giveaway.</li>
+    <li>Staffing the ticket booth.</li>
+    <li>Coordinating our social media presence.</li>
+    <li>Assisting with soldering workshops.</li>
+    <li>Talking with sponsors.</li>
+    <li>Helping to setup and tear down meetup spaces.</li>
+    <li>And more!</li>
+  </ul>
+
+  <p>If you're interested in volunteering,let us know by filling out the form below along with any preferences you might have for duties.</p>
+</section>
+
+<section>
+  <form name="volunteer-page" action="/volunteer/" class="form-stacked" netlify-honeypot="bot-field" netlify>
+    <div class="row uniform">
+      <div class="6u 12u$(xsmall)">
+        <input type="text" name="name" id="name" value="" placeholder="Name" />
+      </div>
+      <div class="6u$ 12u$(xsmall)">
+        <input type="email" name="email" id="email" value="" placeholder="Email" />
+      </div>
+      <div class="6u 12u$(small)">
+        <input type="checkbox" id="volunteer" name="volunteer">
+        <label for="volunteer">I want to volunteer!</label>
+      </div>
+      <div class="6u 12u$(small)">
+        <input name="bot-field" style="display:none">
+        <input type="checkbox" id="human" name="human" checked>
+        <label for="human">I am a robot.</label>
+      </div>
+      <div class="12u$">
+        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+      </div>
+      <div class="12u$">
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="special" /></li>
+          <li><input type="reset" value="Reset" /></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+<script>
+window.onload = function() {
+ const myInput = document.getElementById('message');
+ myInput.onpaste = function(e) {
+   e.preventDefault();
+ }
+}
+</script>
