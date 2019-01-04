@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Riffic';
-    src:url('css/fonts/Riffic.ttf.woff') format('woff'),
-        url('css/fonts/Riffic.ttf.svg#Riffic') format('svg'),
-        url('css/fonts/Riffic.ttf.eot'),
-        url('css/fonts/Riffic.ttf.eot?#iefix') format('embedded-opentype');
+    src:url('../fonts/Riffic.ttf.woff') format('woff'),
+        url('../fonts/Riffic.ttf.svg#Riffic') format('svg'),
+        url('../fonts/Riffic.ttf.eot'),
+        url('../fonts/Riffic.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -340,3 +340,24 @@ body {
 .reveal .column-right {
   float: right;
   padding: 60px; }
+
+#left {
+  left:-8.33%;
+  text-align: center;
+  float: left;
+  width:50%;
+  z-index:-10;}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: center;
+  z-index:-10;
+  width:50%;}
+
+#right li {
+  font-family: Helvetica;
+  font-size: 34px;
+}
+
