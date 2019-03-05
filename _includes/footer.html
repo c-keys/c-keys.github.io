@@ -14,13 +14,15 @@
   <!--   {% endfor %} -->
   <!-- </ul> -->
   <section>
-    <form method="post" action="#">
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/';}"></iframe>
+    <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdj1dm4TxQ9BIR1N7oXohV6pnZ92KmvQGSN8VLraJbMZG7Mgw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
       <div class="inner">
         <header>
           <h2>Join our mailing list</h2> </header>
         <div class="12u$">
           <ul class="actions">
-            <li><input type="email" name="demo-email" id="demo-email" value="" size="30" placeholder="Email" /></li>
+            <li><input type="email" name="emailAddress" id="emailAddress" value="" size="30" placeholder="Email" /></li>
           </ul>
         </div>
         <div class="12u$">
