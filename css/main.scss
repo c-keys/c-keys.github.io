@@ -1732,7 +1732,7 @@ body.is-mobile {
 /* Footer */
 
 #footer {
-  @include padding(6em, 0);
+  @include padding(3em, 0);
   background-color: darken(_palette(bg), 8);
   text-align: center;
 
