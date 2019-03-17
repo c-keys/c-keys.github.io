@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>MIDI Any Soldering Workshop</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background-image="../../images/midi-any-mockup.jpg"></section>
+
+        <section data-background-image="../../images/slides/pro-micro-front-back.jpg"></section>
+        <section data-background-image="../../images/slides/proton-c-front-back.jpg"></section>
+
+        <section data-background-image="../../images/midi-any-1.jpg"></section>
+
+        <section>
+          <h2>Soldering Safety & Tips</h2>
+          <ul>
+            <li class="fragment">Never touch the tip!</li>
+            <li class="fragment">Do not hold components in hand while soldering.</li>
+            <li class="fragment">Clean tip on wool regularly.</li>
+            <li class="fragment">Return soldering iron to stand when not in use.</li>
+            <li class="fragment">Turn off soldering iron.</li>
+            <li class="fragment">Always wash your hands after soldering.</li>
+          </ul>
+        </section>
+
+        <section data-background-image="img/soldering.gif"></section>
+
+        <section data-background-image="../../images/midi-any-2.jpg"></section>
+        <section data-background-image="../../images/midi-any-soldering-1.gif"></section>
+
+        <section><img src="../../images/midi-any-layout-beep.svg"></section>
+        <section><img src="../../images/midi-any-layout-pentatonic.svg"></section>
+        <section><img height="720" src="../../images/midi-any-layout-all.svg"></section>
+
+        <section data-background-image="../../images/slides/feedback-thank-you.jpg"></section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: false,
+      history: true,
+      center: true,
+      width: 1280,
+      height: 720,
+      margin: 0,
+      transition: 'none', // none/fade/slide/convex/concave/zoom
+      backgroundTransition: 'none',
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+    </script>
+
+</body>
+</html>
