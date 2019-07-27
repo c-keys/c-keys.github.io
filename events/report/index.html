@@ -1,0 +1,47 @@
+---
+layout: page
+title: Report code of conduct violations
+---
+
+<section>
+  <p>We take our code of conduct seriously. We also respect your choice to report anonymously. Please include as many details as possible so that we may address the situation. Thank you for helping to keep these events inclusive!</p>
+</section>
+
+<section>
+  <form
+    name="report-coc-violation"
+    action="/"
+    class="form-stacked"
+    netlify-honeypot="bot-field"
+    netlify
+  >
+    <div class="row uniform">
+      <div class="6u 12u$(xsmall)">
+        <input type="text" name="name" id="name" value="" placeholder="Name" />
+      </div>
+      <div class="12u$">
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter violation details here..."
+          rows="6"
+        ></textarea>
+      </div>
+      <div class="12u$">
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="special" /></li>
+          <li><input type="reset" value="Reset" /></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</section>
+
+<script>
+  window.onload = function() {
+    const myInput = document.getElementById("message");
+    myInput.onpaste = function(e) {
+      e.preventDefault();
+    };
+  };
+</script>
